@@ -1,0 +1,55 @@
+body {
+    background-color: rgb(247, 241, 228);
+}
+
+.listas {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 5px;
+    font-size: 1.5em;
+}
+
+.listas p {
+    padding: 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+#container-fecha {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#contenedor-listas {
+    display: flex;
+    flex-flow: column wrap;
+    font-size: 1.1em;
+
+}
+
+#contenedor-listas_p {
+    padding-top: 5px;
+    line-height: 50px;
+}
+
+#contenedor-listas_subtitulo {
+
+    text-decoration: underline;
+    font-size: 1.4em;
+}
+
+@media print {
+    .listas {
+        display: none;
+    }
+    .btn {
+        display: none;
+    }
+    .nameDoc {
+        display: none;
+    }
+}
